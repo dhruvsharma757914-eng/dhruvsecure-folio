@@ -91,41 +91,8 @@ export function Hero() {
               alt={`${personal.name} — portrait`}
               className="h-full w-full object-cover"
             />
-            <button
-              type="button"
-              onClick={() => inputRef.current?.click()}
-              className="absolute inset-0 grid place-items-center bg-background/70 opacity-0 group-hover:opacity-100 transition-opacity text-foreground"
-              aria-label="Change profile photo"
-            >
-              <span className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-primary/40 bg-card text-sm">
-                <Camera className="h-4 w-4 text-primary" /> Change photo
-              </span>
-            </button>
           </div>
 
-          <input
-            ref={inputRef}
-            type="file"
-            accept="image/*"
-            className="hidden"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (file) handleFile(file);
-              e.target.value = "";
-            }}
-          />
-
-          {isCustom && (
-            <button
-              type="button"
-              onClick={resetPhoto}
-              className="absolute -top-2 -right-2 h-7 w-7 grid place-items-center rounded-full bg-card border border-border text-muted-foreground hover:text-foreground"
-              aria-label="Reset photo"
-              title="Reset to default"
-            >
-              <X className="h-3.5 w-3.5" />
-            </button>
-          )}
 
           <div className="absolute -bottom-2 -right-2 px-3 py-1 rounded-full bg-card border border-accent/40 text-xs font-mono text-accent">
             online
