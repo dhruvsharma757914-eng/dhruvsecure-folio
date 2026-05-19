@@ -5,7 +5,7 @@ export const personal = {
   location: "Ghaziabad, Uttar Pradesh, India",
   intro:
     "BCA Cyber Security student focused on ethical hacking, cloud security, Python, Linux, and continuous learning through hands-on labs and certifications.",
-  email: "dhrruvsharma09@gmail.com",
+  email: "dhruvsharma757914@gmail.com",
   linkedin: "https://www.linkedin.com/in/dhruv-sharma-a377952ba",
   github: "https://github.com/dhruvsharma757914-eng",
   tryhackme: "https://tryhackme.com",
