@@ -12,7 +12,7 @@ export function Hero() {
         style={{ background: "var(--gradient-hero)" }}
       />
 
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-[1fr_auto] gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,6 +80,34 @@ export function Hero() {
                 <Icon className="h-4 w-4" />
               </a>
             ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="hidden lg:block relative"
+        >
+          <div
+            className="absolute -inset-4 rounded-full opacity-60 blur-2xl"
+            style={{ background: "var(--gradient-accent)" }}
+          />
+          <div className="relative h-64 w-64 xl:h-72 xl:w-72 rounded-full overflow-hidden border-2 border-primary/40 bg-card shadow-card">
+            <img
+              src="/profile.jpg"
+              alt={`${personal.name} — portrait`}
+              className="h-full w-full object-cover"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = "none";
+              }}
+            />
+            <div className="absolute inset-0 grid place-items-center text-5xl font-bold text-gradient font-mono -z-0">
+              {personal.name.split(" ").map((n) => n[0]).join("")}
+            </div>
+          </div>
+          <div className="absolute -bottom-2 -right-2 px-3 py-1 rounded-full bg-card border border-accent/40 text-xs font-mono text-accent">
+            online
           </div>
         </motion.div>
       </div>
