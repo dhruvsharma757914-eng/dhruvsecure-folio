@@ -12,7 +12,7 @@ export function Hero() {
         style={{ background: "var(--gradient-hero)" }}
       />
 
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-[1fr_auto] gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
