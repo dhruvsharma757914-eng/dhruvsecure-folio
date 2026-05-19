@@ -1,42 +1,9 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
-import { MapPin, Mail, ArrowRight, Github, Linkedin, Camera, X } from "lucide-react";
+import { MapPin, Mail, ArrowRight, Github, Linkedin } from "lucide-react";
 import { personal } from "@/lib/portfolio-data";
 
-const STORAGE_KEY = "dhruv.profile.photo";
-
 export function Hero() {
-  const [photo, setPhoto] = useState<string>("/profile.jpg");
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) setPhoto(saved);
-    } catch {}
-  }, []);
-
-  const handleFile = (file: File) => {
-    if (!file.type.startsWith("image/")) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      const result = reader.result as string;
-      setPhoto(result);
-      try {
-        localStorage.setItem(STORAGE_KEY, result);
-      } catch {}
-    };
-    reader.readAsDataURL(file);
-  };
-
-  const resetPhoto = () => {
-    try {
-      localStorage.removeItem(STORAGE_KEY);
-    } catch {}
-    setPhoto("/profile.jpg");
-  };
-
-  const isCustom = photo !== "/profile.jpg";
+  const photo = "/profile.jpg";
 
   return (
     <section id="top" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
