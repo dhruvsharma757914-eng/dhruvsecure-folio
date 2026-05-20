@@ -16,7 +16,7 @@ import { personal } from "@/lib/portfolio-data";
 
 const title = "Dhruv Sharma — Cybersecurity & Cloud Security Engineer";
 const description =
-  "Portfolio of Dhruv Sharma, BCA Cyber Security student at IMS Ghaziabad. Ethical hacking, cloud security, Python, Linux, and hands-on labs on TryHackMe & Hack The Box.";
+  "Portfolio of Dhruv Sharma — BCA Cyber Security student at IMS Ghaziabad. Ethical hacking, cloud security, Python, Linux, and TryHackMe labs.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

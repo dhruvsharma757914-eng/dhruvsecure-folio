@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dhruvsecure-folio.lovable.app/sitemap.xml
