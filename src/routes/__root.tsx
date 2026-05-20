@@ -83,8 +83,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Dhruv Cyber Den — A modern cybersecurity portfolio showcasing hands-on projects, certifications, and skills in ethical hacking, cloud security, Python, Linux." },
       { property: "og:description", content: "Dhruv Cyber Den — A modern cybersecurity portfolio showcasing hands-on projects, certifications, and skills in ethical hacking, cloud security, Python, Linux." },
       { name: "twitter:description", content: "Dhruv Cyber Den — A modern cybersecurity portfolio showcasing hands-on projects, certifications, and skills in ethical hacking, cloud security, Python, Linux." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/NhOB04h1gVYCXN1YuGaZsCcjLIu1/social-images/social-1779190005621-WhatsApp_Image_2026-05-19_at_10.24.11_AM.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/NhOB04h1gVYCXN1YuGaZsCcjLIu1/social-images/social-1779190005621-WhatsApp_Image_2026-05-19_at_10.24.11_AM.webp" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/NhOB04h1gVYCXN1YuGaZsCcjLIu1/social-images/social-1779257588578-IMG-20260519-WA0021.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/NhOB04h1gVYCXN1YuGaZsCcjLIu1/social-images/social-1779257588578-IMG-20260519-WA0021.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
