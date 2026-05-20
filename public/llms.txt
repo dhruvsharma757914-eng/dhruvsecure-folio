@@ -1,0 +1,7 @@
+# Dhruv's Cyber Den
+
+> Portfolio of Dhruv Sharma — BCA Cyber Security student at IMS Ghaziabad focused on ethical hacking, cloud security, Python, and Linux.
+
+## Pages
+
+- [Home](/): About Dhruv, skills, education, certifications, experience, achievements, blog, and contact info.

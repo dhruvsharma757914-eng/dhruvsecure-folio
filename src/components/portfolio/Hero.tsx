@@ -89,6 +89,10 @@ export function Hero() {
             <img
               src={photo}
               alt={`${personal.name} — portrait`}
+              width={288}
+              height={288}
+              fetchPriority="high"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </div>
