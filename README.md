@@ -76,7 +76,7 @@ To secure an internship or entry-level opportunity in cybersecurity where I can 
 
 ## 📞 Contact
 
-- 💼 LinkedIn: https://www.linkedin.com/in/dhruv-sharma
+- 💼 Linkedin-www.linkedin.com/in/dhruv-sharma-a377952ba
 - 💻 GitHub: https://github.com/dhruvsharma757914-eng
 - 📧 Email: your-dhruvsharma757914@gmail.com
 
